@@ -15,7 +15,7 @@ export default function Index() {
         {/* cabecalho: avatar + nome, lado a lado */}
         <View style={styles.header}>
           <Image
-            source={{ uri: "https://i.pravatar.cc/150?img=12" }}
+            source={require("../assets/avatar.png")}
             style={styles.avatar}
           />
           <Text style={styles.name}>Gabriel Azevedo</Text>
