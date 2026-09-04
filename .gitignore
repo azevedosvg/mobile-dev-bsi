@@ -1,0 +1,37 @@
+# Dependências
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Build nativo (caso ejete ou gere pastas nativas)
+android/
+ios/
+*.ipa
+*.apk
+*.aab
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# Logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Metro bundler
+.metro-health-check*
