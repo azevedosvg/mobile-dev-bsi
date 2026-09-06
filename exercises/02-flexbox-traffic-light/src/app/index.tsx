@@ -1,17 +1,30 @@
-import { Text, View, StyleSheet } from "react-native";
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import TrafficLight from "../components/TrafficLight";
 
 export default function Index() {
   return (
-    <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <StatusBar style="dark" />
+
+      <View style={styles.content}>
+        <TrafficLight orientation="vertical" />
+        <TrafficLight orientation="horizontal" />
+      </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
+    backgroundColor: "#f2f2f2",
+  },
+  content: {
+    flex: 1,
     justifyContent: "center",
+    alignItems: "center",
+    gap: 32,
   },
 });
